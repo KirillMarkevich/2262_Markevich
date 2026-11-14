@@ -1,0 +1,1 @@
+lst.sort(key=lambda word: (len(word), word))

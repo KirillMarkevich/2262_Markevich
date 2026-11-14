@@ -1,0 +1,1 @@
+nums = [x for x in lst if type(x) is int]
