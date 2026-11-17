@@ -39,20 +39,18 @@ print(answer)
 
 ### Задача 03-Удаление буквы
 ```python
-from string import ascii_lowercase
-
 s = input().strip()
 
-best_char = ''
-max_count = 0
+best = ""
+m = 0
 
-for ch in ascii_lowercase:
+for ch in set(s):
     cnt = s.count(ch)
-    if cnt > max_count:
-        max_count = cnt
-        best_char = ch
+    if cnt > m:
+        m = cnt
+        best = ch
 
-print(s.replace(best_char, ''))
+print(s.replace(best, ""))
 ```
 
 ### Задача 4 – Качество пароля
